@@ -13,10 +13,10 @@ go get -u github.com/bigfool-cn/go-tools
 > http
 ```go
 package main
-import "github.com/bigfool-cn/go-tools"
+import toolshttp "github.com/bigfool-cn/go-tools/http"
 
 func main()  {
-    httpClient := tools_http.NewHttpClient()
+    httpClient := toolshttp.NewHttpClient()
     statusCode, response, err := httpClient.SetClient(xxx).SetMethod(xxx).SetUrl(xxx).SetHeader(xxx).SetBody(xxx).Do()
 }
 ```
